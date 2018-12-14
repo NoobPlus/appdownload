@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{ background: #ccc; font-family: "Microsoft Yahei"; color: #231815; }
+.wrap{height: 100%; width:100%; min-height: 100%; max-width: 640px; min-width: 320px; margin: 0 auto; overflow: hidden; background: #f6f6f6; font-size: 28px; background: #10375a url(../images/bg2.png) no-repeat; background-size: cover; position: relative; }
+.title{ color: #FFF; text-align: center;padding:30px; }
+.title img{width:100%;text-align: center;}
+.title .slogan{font-size: 1.2em;width:100%;position: absolute;top:58%; left: 0;text-align: center;color: #000000;}
+.title .slogan strong{font-size: 1.5em;margin-right: 0.2em;color:#fff;}
+.down{ width: 100%; position: absolute; left: 0; bottom: 6%; text-align: center; }
+.down .btn{ width: 50%; margin-bottom:5%; }
+.msg{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); display: none; }
+.msg img{ width: 100%; }
+.wrap .point-1,
+.wrap .point-6 {
+	width: 20px;
+	height: 50px;
+	background: url(../images/intro_top.png) no-repeat -160px 0;
+	position: absolute;
+	left: 0px;
+	top: 151px;
+	z-index: 20
+}
+
+.wrap .point-2,
+.wrap .point-7 {
+	width: 22px;
+	height: 22px;
+	background: url(../images/intro_top.png) no-repeat -180px 0;
+	position: absolute;
+	left: 33px;
+	top: 161px;
+	z-index: 20
+}
+
+.wrap .point-3,
+.wrap .point-8 {
+	width: 9px;
+	height: 15px;
+	background: url(../images/intro_top.png) no-repeat -202px 0;
+	position: absolute;
+	left: 93px;
+	top: 181px;
+	z-index: 20
+}
+
+.wrap .point-4,
+.wrap .point-9 {
+	width: 14px;
+	height: 12px;
+	background: url(../images/intro_top.png) no-repeat -220px 0;
+	position: absolute;
+	left: 123px;
+	top: 171px;
+	z-index: 20
+}
+
+.wrap .point-5,
+.wrap .point-10 {
+	width: 14px;
+	height: 12px;
+	background: url(../images/intro_top.png) no-repeat -240px 0;
+	position: absolute;
+	left: 173px;
+	top: 171px;
+	z-index: 20
+}
+
+.wrap .point-6 {
+	left: 220px;
+	top: 191px
+}
+
+.wrap .point-7 {
+	left: 240px;
+	top: 121px
+}
+
+.wrap .point-8 {
+	left: 230px;
+	top: 181px
+}
+
+.wrap .point-9 {
+	left: 3px;
+	top: 231px
+}
+
+.wrap .point-10 {
+	left: 0px;
+	top: 261px
+}
+.animation .point-1,
+.animation .point-4,
+.animation .point-7,
+.animation .point-10,
+.animation .point-13 {
+	-webkit-animation: piao1 8s 2s ease both infinite;
+	-moz-animation: piao1 8s 2s ease both infinite
+}
+
+@-webkit-keyframes piao1 {
+	0% {
+		-webkit-transform: translate(0, 0);
+		opacity: 0
+	}
+	10% {
+		opacity: 1
+	}
+	90% {
+		opacity: 1
+	}
+	100% {
+		-webkit-transform: translate(300px, 324px);
+		opacity: 0
+	}
+}
+
+@-moz-keyframes piao1 {
+	0% {
+		-moz-transform: translate(0, 0);
+		opacity: 0
+	}
+	10% {
+		opacity: 1
+	}
+	90% {
+		opacity: 1
+	}
+	100% {
+		-moz-transform: translate(300px, 324px);
+		opacity: 0
+	}
+}
+
+.animation .point-2,
+.animation .point-5,
+.animation .point-8,
+.animation .point-11,
+.animation .point-14 {
+	-webkit-animation: piao2 16s 0.5s ease both infinite;
+	-moz-animation: piao2 16s 2s ease both infinite
+}
+
+@-webkit-keyframes piao2 {
+	0% {
+		-webkit-transform: translate(0, 0);
+		opacity: 0
+	}
+	10% {
+		opacity: 1
+	}
+	90% {
+		opacity: 1
+	}
+	100% {
+		-webkit-transform: translate(500px, 540px);
+		opacity: 0
+	}
+}
+
+@-moz-keyframes piao2 {
+	0% {
+		-moz-transform: translate(0, 0);
+		opacity: 0
+	}
+	10% {
+		opacity: 1
+	}
+	90% {
+		opacity: 1
+	}
+	100% {
+		-moz-transform: translate(500px, 540px);
+		opacity: 0
+	}
+}
+
+.animation .point-3,
+.animation .point-6,
+.animation .point-9,
+.animation .point-12 {
+	-webkit-animation: piao3 6s 1s ease both infinite;
+	-moz-animation: piao3 6s 2s ease both infinite
+}
+
+@-webkit-keyframes piao3 {
+	0% {
+		-webkit-transform: translate(0, 0);
+		opacity: 0
+	}
+	10% {
+		opacity: 1
+	}
+	90% {
+		opacity: 1
+	}
+	100% {
+		-webkit-transform: translate(250px, 270px);
+		opacity: 0
+	}
+}
+
+@-moz-keyframes piao3 {
+	0% {
+		-moz-transform: translate(0, 0);
+		opacity: 0
+	}
+	10% {
+		opacity: 1
+	}
+	90% {
+		opacity: 1
+	}
+	100% {
+		-moz-transform: translate(250px, 270px);
+		opacity: 0
+	}
+}
+
+
+@media screen and (max-width: 600px){ 
+	.wrap{ 
+		font-size: 26px;
+	} 
+}
+@media screen and (max-width: 480px){ 
+	.wrap{ 
+		font-size: 20px;
+	} 
+}
+@media screen and (max-width: 360px){ 
+	.wrap{ 
+		font-size: 16px;
+	}
+}

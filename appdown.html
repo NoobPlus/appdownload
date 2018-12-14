@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style"  />
+	<meta content="telephone=no" name="format-detection" />
+	<link rel="stylesheet" href="weixin/css/global.css"/>
+	<link rel="stylesheet" href="weixin/css/style.css"/>
+	<link rel="stylesheet" href="weixin/css/animate.min.css"/>
+	<meta name="author" content="leigege" />
+	<title>快货达</title>
+</head>
+<body>
+<div class="wrap animation">
+    <div class="title">
+        <img class="btn img-border radius-big padding animated flipInX" src="weixin/images/iphone.png" />
+        <div id="animation_box" class="slogan animated bounceIn" >
+            <p><strong>CTMS司机端</strong></p>
+        </div>
+    </div>
+    <div id="animation_box" class="down animated bounceIn">
+       <img class="btn img-border radius-big padding" src="weixin/images/btn-ios.png" data="https://itunes.apple.com/cn/app/ctms%E5%8F%B8%E6%9C%BA/id1267743621?mt=8" />
+       <img class="btn" src="weixin/images/btn-and.png" data="https://a.app.qq.com/o/simple.jsp?pkgname=com.ctms.driver&fromcase=40003" />
+    </div>
+    <div class="msg"><img src="weixin/images/msg.png"></div>
+    <div class="point-1"></div>
+    <div class="point-2"></div>
+    <div class="point-3"></div>
+    <div class="point-4"></div>
+    <div class="point-5"></div>
+    <div class="point-6"></div>
+    <div class="point-7"></div>
+    <div class="point-8"></div>
+    <div class="point-9"></div>
+    <div class="point-10"></div>
+</div>
+
+<script type="text/javascript" src="weixin/js/zepto.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.btn').click(function(){
+            if(isWeiXin() || is_mobileQQ()){
+                $('.msg').show();
+                return false;
+            }else{
+				window.location.href=$(this).attr('data');
+			}
+        })
+        $('.msg').click(function(){
+            $(this).hide();
+            return false;
+        });
+
+        //判断是否是微信浏览器
+        function isWeiXin(){
+            var ua = window.navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        //判断是否是QQ浏览器
+        function is_mobileQQ(){
+			var ua = navigator.userAgent.toLowerCase();
+			if (ua.match(/\sQQ/i) == "qq" && /iphone/i.test(ua) == false) {
+				return true;
+			} else {
+				return false;
+			}
+}
+    })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
